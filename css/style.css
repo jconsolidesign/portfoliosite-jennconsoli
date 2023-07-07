@@ -1,0 +1,106 @@
+/*
+Colors used:
+Primary (Dark Red): #8e3628
+Secondary (Orange):#D8744B
+Black
+White
+
+Fonts used: 
+Montserrat
+*/
+
+
+img {
+    width: 100%;
+  }
+
+body {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFD2CB
+}
+
+h1,h2,h3,h4 {
+    line-height: 1.4;
+}
+
+h1 { font-size: 128;
+font-weight: 700;
+color: #8e3628;
+}
+
+h2 {font-size:32;
+font-weight: 700;
+color: #8e3628;}
+
+h3 {font-size: 32;
+font-weight: 700;
+color: #D8744B}
+
+h4 {
+    font-size: 86;
+    font-weight: 400;
+    color: #8e3628;
+}
+
+p {font-size: 24;
+font-weight: 400;
+color: black}
+
+ul {font-size: 32;
+font-weight: 400;
+color:#8e3628;
+list-style: none;
+}
+
+/*links*/
+a {
+    color: #8e3628;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover,
+  a:focus {
+    color:#8e3628;
+    font-weight: 700;
+  }
+  a:active {
+    color: #db5f4c;
+    font-weight: 700;
+  }
+ 
+  /*buttons*/
+  .button {
+    display:inline-block;
+    background-color: #D8744B;
+    color:#ffffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  .button:hover {
+    background-color:#8e3628;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .button:active {
+    background-color:#8e3628;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .button.contact {
+    background-color: white;
+    color: #8e3628;
+    border: 2px solid #8e3628;
+  }
+  .button.contact:hover {
+    background-color: white;
+    color: #D8744B;
+    border: 2px solid #D8744B;
+  }

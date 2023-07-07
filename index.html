@@ -5,10 +5,23 @@
     <meta charset="utf-8">
     <title>Jenn Consoli Portfolio</title>
     <link href="/img/favicon.ico" rel="shortcut icon">
+    <!--normalize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--typography montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="style.css">
+         <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
+    <header id="hero">
         <picture>
             <source media="(max-width:500px)" srcset="img.logo-jc.svg">
             <img src="img/logo-jc.svg" alt="Jenn Consoli Logo">
@@ -26,11 +39,11 @@
         <div>
             <div>
                 <h1>Hi I'm Jenn Consoli,</h1>
-                <span>I'm a user interface designer located in New Jersey.</span>
+                <h4>I'm a user interface designer located in New Jersey.</h4>
             </div><br>
             <!--project-1-->
             <div>
-                <div>
+                <div id="Work">
                     <h2>My Work</h2>
                 </div>
                 <div><!-- open row that holds (2) columns for project -->
@@ -47,8 +60,8 @@
                             multiple attendees. iOS and Android prototypes were create
                             to reflect familiar UI patterns and elements based on their
                             respective operating system. Project created in Adobe XD.</p>
-                        <a href="#"> View Project </a> <!-- button or link label -->
-                    </div><!-- end second column -->
+                        <a href="#" class="button"> View Project </a> <!-- button or link label -->
+                    </div><br><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
 
                 <!--project-2-->
@@ -65,8 +78,8 @@
                         places. UX research was conducted in order to design
                         responsive layout at four breakpoints.
                         Project created in Figma.</p>
-                    <a href="/godoggo.html"> View Project </a> <!-- button or link label -->
-                </div><!-- end second column -->
+                    <a href="/godoggo.html" class="button"> View Project </a> <!-- button or link label -->
+                </div><br><!-- end second column -->
             </div><!-- end row that holds (2) columns for project -->
 
             <!--project-3-->
@@ -81,8 +94,8 @@
                 <p>Harvest is a mobile app that helps people save money quickly in preparation for a big purchase or
                     expenditure. Final prototype includes multiple uses of interaction design and simple animation.
                     Project created in Figma.</p>
-                <a href="#"> View Project </a> <!-- button or link label -->
-            </div><!-- end second column -->
+                <a href="#" class="button"> View Project </a> <!-- button or link label -->
+            </div><br><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
     </main>
 
@@ -91,7 +104,7 @@
             <H2>Get in Touch</H2>
         </div>
         <p>Let's connect and get started on your next creative project.</p>
-        <div><a href="mailto:jennconsoli@gmail.com">Email Me</a></div>
+        <div><a href="mailto:jennconsoli@gmail.com" class="button contact">Email Me</a></div>
         <div>
             <!--Social Media-->
             <a href="https://www.linkedin.com/in/jenn-consoli/" target="_blank">
@@ -167,7 +180,7 @@
                         d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z" />
                 </svg>
             </a>
-            </div>
+        </div>
 
     </footer>
 </body>
